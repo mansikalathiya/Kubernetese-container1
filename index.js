@@ -20,7 +20,7 @@ app.post('/store-file', async (req, res) => {
   try {
     const filePath = path.join(storageDir, file);
     await fs.writeFile(filePath, data);
-    res.json({ file, message: 'File stored successfully.' });
+    res.json({ file, message: 'Success.' });
   } catch (err) {
     console.error('File storage error:', err);
     res.status(500).json({ file, error: 'Error while storing the file.' });
