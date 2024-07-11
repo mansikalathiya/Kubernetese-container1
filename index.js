@@ -9,6 +9,9 @@ const storageDir = path.join(__dirname, 'MANSI_PV_dir');
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('hii Mansi here');
+});
 
 app.post('/store-file', async (req, res) => {
   const { file, data } = req.body;
