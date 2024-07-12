@@ -9,7 +9,10 @@ const storageDir = path.join(__dirname, 'MANSI_PV_dir');
 
 app.use(express.json());
 
-
+app.get('/',(req,res)=>
+{
+  res.send("Hello world")
+})
 
 
 
