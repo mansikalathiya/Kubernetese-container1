@@ -12,12 +12,6 @@ app.use(express.json());
 
 
 
-
-
-app.get('/', (req, res) => {
-  res.send('hellow world');
-});
-
 app.post('/store-file', async (req, res) => {
   const { file, data } = req.body;
 
